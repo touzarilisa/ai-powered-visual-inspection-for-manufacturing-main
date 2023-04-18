@@ -1,0 +1,7 @@
+- CNN : Defect Detection in Printed Circuit Boards with Pre-Trained Feature Extraction Methodology with Convolution Neural Networks (https://www.techscience.com/cmc/v70n1/44420)
+
+- Backbone CNN + similarity measurement : Unknown defect detection for printed circuit board based on multi-scale deep similarity measure method (https://www.researchgate.net/publication/343257517_Unknown_defect_detection_for_printed_circuit_board_based_on_multi-scale_deep_similarity_measure_method)
+
+- Group pyramid pooling : ONLINE PCB DEFECT DETECTOR ON A NEW PCB DEFECT DATASET(https://arxiv.org/pdf/1902.06197v1.pdf)
+
+- Denoising autoencoder : PCB Defect Detection Using Denoising Convolutional Autoencoders(https://arxiv.org/pdf/2008.12589.pdf)
