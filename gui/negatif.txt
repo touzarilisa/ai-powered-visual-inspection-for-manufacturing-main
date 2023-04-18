@@ -1,0 +1,1 @@
+he number of defected cards exceeds the number of non defected cards. This implicates the existance of a technical problem in the production line that was not detected previously. Please recheck all settings.

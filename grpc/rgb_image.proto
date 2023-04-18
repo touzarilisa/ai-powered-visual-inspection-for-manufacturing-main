@@ -1,0 +1,49 @@
+// This program aims to describe with protobuf the data structure of the project 
+// "ai-powered-visual-inspection-for-manifacturing"
+// The data that will be used is mainly an RGB image or a list of RGB images
+// The name of the RGB image will also be provided
+
+// Define the version of the protobuf
+syntax = "proto3";
+
+// Define the package
+package ai_powered_visual_inspection_for_manifacturing;
+
+// Input RGB image
+message RGB_image {
+  // The name of the image
+  string name = 1;
+  // The width of the image
+  int32 width = 2;
+  // The height of the image
+  int32 height = 3;
+  // The depth of the image
+  int32 depth = 4;
+  // The RGB image
+  bytes image = 5;
+}
+
+// Output Predicted
+message Predicted {
+  // The predicted label
+  string label = 1;
+  // Bounding box cordinates
+  int32 x = 2;
+  int32 y = 3;
+  int32 width = 4;
+  int32 height = 5;
+  // Shape of the image
+  int32 height_image = 6;
+  int32 width_image = 7;
+  int32 depth_image = 8;
+  // Confidence of the prediction
+  float confidence = 9;
+}
+
+// Service to predict the label of an image
+service Predict_service {
+  // Predict the label of an image
+  rpc Predict (RGB_image) returns (Predicted);
+}
+
+// Generate code grpc tools : python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. rgb_image.proto

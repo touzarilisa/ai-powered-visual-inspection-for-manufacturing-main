@@ -1,0 +1,1 @@
+The number of non defected cards exceeds number of detected cards. However,the ratio stays below expectations. This might implicates the existance of a technical problem in the production line that was not detected previously. Please recheck all settings.
