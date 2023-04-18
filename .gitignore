@@ -1,0 +1,16 @@
+# Ignore Pycharm files
+.idea
+.DS_Store
+
+# Vs code files 
+.vscode
+
+# Ignore pyache files
+__pycache__
+
+# Ignore pycache files
+*.pyc
+
+# Ignore data folder
+data
+
